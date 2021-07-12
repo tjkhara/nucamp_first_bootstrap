@@ -38,9 +38,16 @@
   </head>
 
   <body>
+    <!-- Jumbotron -->
     <header class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
+          <!-- logo -->
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <a href="#">
+              <img src="./img/logo.png" alt="logo" class="img-fluid" />
+            </a>
+          </div>
           <div class="col">
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
@@ -52,8 +59,11 @@
     <!-- Nav bar start -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="img/logo.png" alt="logo small" height="30" width="30" />
+        </a>
         <button
-          class="navbar-toggler ml-auto"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#nucampNavbar"
@@ -94,15 +104,30 @@
     <!-- content row 1 -->
     <div class="container">
       <div class="row row-content align-items-center">
+        <!-- col 1 -->
         <div class="col-sm-4 col-md-3 order-sm-last">
           <h2 class="text-sm-right">Discover & Review</h2>
         </div>
+        <!-- col 2 -->
         <div class="col">
-          <h3>Our Campsites</h3>
-          <p class="d-none d-sm-block">
-            Explore our growing database of curated campsites and leave your own
-            reviews!
-          </p>
+          <!-- media div start -->
+          <div class="media">
+            <img
+              class="d-flex mr-3 img-thumbnail"
+              src="img/breadcrumb-trail-thumb.jpg"
+              alt="trail"
+            />
+            <!-- media body start -->
+            <div class="media-body align-self-center">
+              <h3>Our Campsites</h3>
+              <p class="d-none d-sm-block">
+                Explore our growing database of curated campsites and leave your
+                own reviews!
+              </p>
+            </div>
+            <!-- media body end -->
+          </div>
+          <!-- media div end -->
         </div>
       </div>
     </div>
@@ -124,15 +149,30 @@
     <!-- content row 3 -->
     <div class="container">
       <div class="row row-content align-items-center">
+        <!-- col 1 -->
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right">Our Community Partners</h2>
         </div>
+        <!-- col 2 -->
         <div class="col">
-          <h3>Bootstrap Outfitters</h3>
-          <p class="d-none d-sm-block">
-            Bootstrap Outfitters supplies you with gear you need at prices you
-            can't beat.
-          </p>
+          <!-- media div start -->
+          <div class="media">
+            <img
+              src="img/bootstrap-thumb.png"
+              alt="thumbnail"
+              class="d-flex mr-3 img-thumbnail"
+            />
+            <!-- Media body start -->
+            <div class="media-body align-self-center">
+              <h3>Bootstrap Outfitters</h3>
+              <p class="d-none d-sm-block">
+                Bootstrap Outfitters supplies you with gear you need at prices
+                you can't beat.
+              </p>
+            </div>
+            <!-- Media body end -->
+          </div>
+          <!-- media div end -->
         </div>
       </div>
     </div>
