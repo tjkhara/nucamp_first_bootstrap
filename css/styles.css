@@ -47,3 +47,12 @@ a:hover {
 .navbar {
   background-color: #901cad;
 }
+
+/* carousel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+  border: solid #5637dd;
+}
