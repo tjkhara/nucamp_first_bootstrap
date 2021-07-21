@@ -13,7 +13,7 @@ h3 {
 }
 
 h2 {
-  color: #3046c5;
+  color: #80b7ef;
 }
 
 header h2 {
@@ -55,4 +55,29 @@ a:hover {
 
 .carousel {
   border: solid #5637dd;
+}
+
+#changeit {
+  background: #343b17;
+}
+
+.navbar {
+  background: #b5ae8b;
+}
+
+body {
+  background: #d3cbd7;
+}
+
+.site-footer {
+  background: #343b17;
+  padding: 20px 0;
+}
+
+.site-footer {
+  color: #fff;
+}
+
+.site-footer a {
+  color: #fff;
 }
