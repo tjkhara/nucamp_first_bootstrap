@@ -57,7 +57,17 @@
             <h2>a better way to camp</h2>
           </div>
           <div class="col-md-4 col-xl-2 align-self-center mt-4">
-            <div class="btn btn-info btn-lg">Reserve Campsite</div>
+            <!-- Tooltip added to this button -->
+            <a
+              href="#reserveForm"
+              role="button"
+              class="btn btn-lg btn-info"
+              data-toggle="tooltip"
+              data-html="true"
+              data-placement="bottom"
+              title="<br>Or call us at <strong>216 255 2519</strong>"
+              >Reserve Campsite</a
+            >
           </div>
         </div>
       </div>
@@ -323,5 +333,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Tooltips -->
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
