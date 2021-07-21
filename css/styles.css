@@ -20,6 +20,12 @@ header h2 {
   color: #cec8ff;
 }
 
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 .site-footer {
   background-image: linear-gradient(#cec8fe, white);
   padding: 20px 0;
@@ -40,10 +46,4 @@ header h2 {
 
 .navbar {
   background-color: #901cad;
-}
-
-.tab-content {
-  border: 1px solid #ddd;
-  border-top: none;
-  padding: 10px;
 }
