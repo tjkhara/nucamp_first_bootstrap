@@ -334,6 +334,7 @@
       <!-- row carousel start -->
       <div class="row row-content align-items-center">
         <div class="col-md-8 mx-auto">
+          <!-- homeCarousel div start -->
           <div id="homeCarousel" class="carousel slide" data-ride="carousel">
             <!-- indicators start -->
             <ol class="carousel-indicators">
@@ -426,17 +427,16 @@
             <!-- carousel controls end -->
             <!-- carousel buttons start -->
             <div class="btn-group" id="carouselButton">
-              <!-- Pause button -->
               <button class="btn btn-danger btn-sm" id="carouselPause">
                 <i class="fa fa-pause"></i>
               </button>
-              <!-- Play button -->
               <button class="btn btn-danger btn-sm" id="carouselPlay">
                 <i class="fa fa-play"></i>
               </button>
             </div>
             <!-- carousel buttons end -->
           </div>
+          <!-- homeCarousel div end -->
         </div>
       </div>
       <!-- row carousel end -->
@@ -658,5 +658,18 @@
         $('[data-toggle="tooltip"]').tooltip();
       });
     </script>
+    <!-- Carousel button JQuery functionality start -->
+    <script>
+      $(function () {
+        $(".carousel").carousel({ interval: 2000 });
+        $("#carouselPause").click(function () {
+          $(".carousel").carousel("pause");
+        });
+        $("#carouselPlay").click(function () {
+          $(".carousel").carousel("cycle");
+        });
+      });
+    </script>
+    <!-- Carousel button JQuery functionality end -->
   </body>
 </html>
