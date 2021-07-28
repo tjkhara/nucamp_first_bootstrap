@@ -425,16 +425,13 @@
               <span class="sr-only">Next</span>
             </a>
             <!-- carousel controls end -->
-            <!-- carousel buttons start -->
-            <div class="btn-group" id="carouselButton">
-              <button class="btn btn-danger btn-sm" id="carouselPause">
-                <i class="fa fa-pause"></i>
-              </button>
-              <button class="btn btn-danger btn-sm" id="carouselPlay">
-                <i class="fa fa-play"></i>
-              </button>
-            </div>
-            <!-- carousel buttons end -->
+            <!-- carousel button start -->
+
+            <button class="btn btn-danger btn-sm" id="carouselButton">
+              <i class="fa fa-pause"></i>
+            </button>
+
+            <!-- carousel button end -->
           </div>
           <!-- homeCarousel div end -->
         </div>
@@ -661,12 +658,28 @@
     <!-- Carousel button JQuery functionality start -->
     <script>
       $(function () {
+        // Initializes the carousel with an optional options object and starts cycling through items.
         $(".carousel").carousel({ interval: 2000 });
-        $("#carouselPause").click(function () {
-          $(".carousel").carousel("pause");
-        });
-        $("#carouselPlay").click(function () {
-          $(".carousel").carousel("cycle");
+        // Select the carousel button id and when clicked
+
+        $("#carouselButton").click(function () {
+          // if the children with class of i of that selected #carouselButton show pause (that means mode is play)
+          if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+            // Change it to pause (pause the slider)
+            $(".carousel").carousel("pause");
+            // Remove the pause icon
+            $("#carouselButton").children("i").removeClass("fa-pause");
+            // Add the play icon
+            $("#carouselButton").children("i").addClass("fa-play");
+          } else {
+            // if icon is play, mode is pause
+            // When clicked we need to start playing
+            $(".carousel").carousel("cycle");
+            // remove the play icon
+            $("#carouselButton").children("i").removeClass("fa-play");
+            // add the pause icon
+            $("#carouselButton").children("i").addClass("fa-pause");
+          }
         });
       });
     </script>
