@@ -22,4 +22,15 @@ $(function () {
       $("#carouselButton").children("i").addClass("fa-pause");
     }
   });
+
+  // For login modal
+  $("#loginButton").click(function () {
+    $("#loginModal").modal("show");
+  });
+
+  // For weekly assignment task
+  // For reserve campsite modal
+  // $("#reserveButton").click(function () {
+  //   $("#reserveModal").modal("show");
+  // });
 });

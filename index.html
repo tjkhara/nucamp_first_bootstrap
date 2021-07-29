@@ -59,11 +59,7 @@
           </div>
           <div class="col-md-4 col-xl-2 align-self-center mt-4">
             <!-- Modal launch button -->
-            <div
-              class="btn btn-info btn-lg"
-              data-toggle="modal"
-              data-target="#reserveModal"
-            >
+            <div class="btn btn-info btn-lg" id="reserveButton">
               Reserve Campsite
             </div>
           </div>
@@ -71,7 +67,7 @@
       </div>
     </header>
 
-    <!-- modal code start -->
+    <!-- reserve modal code start -->
 
     <!-- Modal -->
     <div
@@ -241,14 +237,12 @@
           <!-- Modal -->
           <!-- Login link start -->
           <span class="navbar-text ml-auto">
-            <a
-              href=""
-              role="button"
-              data-toggle="modal"
-              data-target="#loginModal"
-            >
+            <div class="btn text-light" id="loginButton">
               <i class="fa fa-sign-in"></i> Login
-            </a>
+            </div>
+            <!-- <a href="" role="button" id="loginButton">
+              <i class="fa fa-sign-in"></i> Login
+            </a> -->
           </span>
           <!-- Login link end -->
         </div>
@@ -256,8 +250,14 @@
     </nav>
     <!-- Nav bar end -->
 
-    <!-- Modal code start -->
-    <div id="loginModal" class="modal fade" role="dialog">
+    <!-- Login Modal code start -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <!-- modal header start -->
