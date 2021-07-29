@@ -30,7 +30,7 @@ $(function () {
 
   // For weekly assignment task
   // For reserve campsite modal
-  // $("#reserveButton").click(function () {
-  //   $("#reserveModal").modal("show");
-  // });
+  $("#reserveButton").click(function () {
+    $("#reserveModal").modal("show");
+  });
 });
